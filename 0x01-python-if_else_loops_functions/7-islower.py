@@ -2,8 +2,9 @@
 
 def islower(c):
     arr = "abcdefghijklmnopqrstuvwxyz"
-    for char in arr:
-        if c == char:
+    length = len(arr)
+    for i in range(length):
+        if c == arr[i]:
             return True
     else:
         return False
