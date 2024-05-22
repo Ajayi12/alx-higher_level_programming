@@ -2,15 +2,11 @@
 
 def uppercase(str):
     for char in str:
-        if char.isalpha():
-            temp = ord(char)
-            if temp > 91:
-                temp -= 32
-                temp = chr(temp)
-                print(f"{temp}", end="")
-            else:
-                temp = chr(temp)
-                print(f"{temp}", end="")
+        temp = ord(char)
+        if temp >= 97 and temp <= 122:
+            temp -= 32
+            temp = chr(temp)
         else:
-            print(f"{char}", end="")
+            temp = chr(temp)
+        print(f"{temp}", end="")
     print()
