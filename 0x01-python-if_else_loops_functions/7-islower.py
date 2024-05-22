@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 
 def islower(c):
-    arr = "abcdefghijklmnopqrstuvwxyz"
-    length = len(arr)
-    for i in range(length):
-        if c == arr[i]:
-            return True
+    char = ord(c)
+    if char >= 97 and char <= 123:
+        return True
     else:
         return False
