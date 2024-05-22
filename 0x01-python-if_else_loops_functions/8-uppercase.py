@@ -8,5 +8,5 @@ def uppercase(str):
             temp = chr(temp)
         else:
             temp = chr(temp)
-        print(f"{temp}", end="")
+        print("{}".format(temp), end="")
     print()
