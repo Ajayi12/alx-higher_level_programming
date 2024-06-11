@@ -6,5 +6,5 @@ def number_keys(a_dictionary):
     """
     sums = 0
     for i, v in enumerate(a_dictionary):
-        sums += i
+        sums += 1
     return sums
